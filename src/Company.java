@@ -1,10 +1,11 @@
 public class Company {
     static String companyName="Bublic";
-    static final int employeeID = 4444;
+    final int employeeID;
     String employeeName;
 
-    Company(String employeeName){
+    Company(String employeeName, int employeeID){
         this.employeeName=employeeName;
+        this.employeeID=employeeID;
     }
     public static void printCompanyName(){
         System.out.println(companyName);

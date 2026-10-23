@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
         // 1 Компани.
-        Company company1 = new Company("Petya");
+        Company company1 = new Company("Petya", 111);
         Company.printCompanyName();
         System.out.println(company1.employeeID + " " + company1.employeeName);
         company1.printCompanyName();
-        Company company2 = new Company("Petya");
+        Company company2 = new Company("Vasya",222);
         company2.printCompanyName();
         System.out.println(company2.employeeID + " " + company2.employeeName);
         Company.companyName = "Baranka";
@@ -13,7 +13,8 @@ public class Main {
         company2.printCompanyName();
         System.out.println(company1.employeeID);
         System.out.println(company2.employeeID);
-        System.out.println(Company.employeeID);
+        Company.printCompanyName();
+        //       company1.employeeID=333; Ошибка компиляции
         // 2 MathConstants
         MathConstants.calculateCircleArea(5.0);
         MathConstants.calculateCircumference(3.5);
@@ -42,11 +43,6 @@ public class Main {
 
         person1.printPersonInfo();
         person2.printPersonInfo();
-
-
-
-
-
 
     }
 }
